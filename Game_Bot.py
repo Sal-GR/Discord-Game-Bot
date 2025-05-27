@@ -17,7 +17,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 buzzer_locked = False
 first_buzzer = None
-BUZZER_SOUND = "buzzer.mp3"  # Make sure this file exists in the same folder
+BUZZER_SOUND = "buzzer.mp3"
 
 class BuzzerView(discord.ui.View):
     @discord.ui.button(label="Buzz!", style=discord.ButtonStyle.red)
