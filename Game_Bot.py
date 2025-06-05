@@ -60,7 +60,7 @@ class BuzzerView(discord.ui.View):
             await interaction.response.send_message("❌ You must be in a voice channel to buzz!", ephemeral=True)
             return
 
-        # 📣 Announce winner in a text channel
+        
         results_channel = discord.utils.get(interaction.guild.text_channels, name="game-show")
         if results_channel:
             await results_channel.send(f"🔔 **{first_buzzer}** buzzed in first!")
